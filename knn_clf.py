@@ -19,6 +19,8 @@ class knn_clf(BaseEstimator):
         self.X = X.copy()
         self.c = y.copy()
         
+        return self
+        
             
     def predict(self,X : np.array):
         

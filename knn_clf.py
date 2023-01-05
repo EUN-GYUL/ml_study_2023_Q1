@@ -6,8 +6,8 @@ class knn_clf(BaseEstimator):
     """_summary_
     K Nearest Neighnors classifier
     """
-    def __init__(self,n_neighbors = 5) -> None:
-        self.n_neighnors = n_neighbors
+    def __init__(self , n_neighbors = 5) :
+        self.n_neighbors = n_neighbors
         self.X = None
         self.c = None
 
@@ -26,7 +26,7 @@ class knn_clf(BaseEstimator):
         
         m = X.shape[0]
         n = self.X.shape[0]
-        k = self.n_neighnors
+        k = self.n_neighbors
         metric = np.zeros((m,n))
         
         y_pred = np.zeros(m)
